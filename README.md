@@ -32,11 +32,13 @@ Follow the above functionality to both timeToVisitButton and attractionsButton.
 
 
 Note
+
 Apply the functionality to the given prefilled code using JavaScript.
 
 Use the Bootstrap display utilities to achieve the given functionality.
 
 Concepts Review
+
 Want to quickly review some of the concepts you’ve been learning?
 
 Take a look at the Cheat Sheets.
