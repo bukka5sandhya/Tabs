@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width ,initial-scale=1,shrink-to-fit=no">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="bg-container">
+            <div class="container">
+            <div class="row">
+            <div class="col-12 text-center mb-4">
+            <h1 class="main-heading">Varanasi</h1>
+            <p class="para">The city is very commonly referred to as City of<br /> Temples, Holy City of India, Rligious Capital of India, <br /> and city of learning. </p>
+            </div>  
+            <div class="col-12 col-lg-5 mb-4">
+            <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-dynamic-webapps/tabs-varanasi-img.png" class="image"/>
+            </div>
+            <div class="col-12 col-lg-7">
+                <div class="d-flex flex-row justify-content-between">
+                    <button class="p-3 selected-button" id="aboutButton" onclick="clickAboutTab()">About</button>
+                    <button class="p-3 button" id="timeToVisitButton" onclick="clickTimeToVisitTab()">Time to visit</button>
+                    <button class="p-3 button" id="attractionsButton" onclick="clickAttractionsTab()">Attractions</button>
+
+                </div>
+            </div>
+            <div class="tabs-container">
+                <div id="aboutTab" class="p-3">
+                    <p class="tab-content">
+                        Varanasi is one of the oldest living cities in the world.<br />. Its
+                        Prominence in Hindu mythology is virtually <br /> unrevealed. Mark
+                        Twain, the English author  <br />and literature, who was enthralled
+                        by the legend  <br /> and sanctity of Benaras, once wrote, ''Benaras
+                        is older than history, older than <br /> tradition, older even than
+                        legend <br />and looks twice as old as all of them put together".
+                    </p>
+                </div>
+                <div class="timeToVisit" class="p-3">
+                    <p class="tab-content">
+                        October to March is the best time to visit Varanasi <br />because
+                        most of the fairs here are held during this <br/> time of the year.
+                        Festivities begin with Diwali and <br /> continue to Dev Diwali
+                        celebrated on the 15th day <br />from Diwali. In between, there is
+                        also Annakut. During <br />this time, the ghats are lit with lights
+                        and diyas. <br/> Earthen lamps adorn the staircase of the ghats <br /> and
+                        are also afloat in the river. Firecrackers burn through <br/> the
+                        night, and it's a sight no one should miss.
+                    </p>
+                </div>
+                <div class="attractionsTab" class="p-3">
+                    <p class="tab-content">
+                        When visiting Varanasi, one comes across plenty of <br /> ghats, but
+                        among them, Dashashwamedh Ghat is said <br/>to be one of the oldest
+                        and most important. This ghat, <br/>leading to the Ganges, is
+                        located close to the famous <br />old Vishwanath temple in Kashi
+                        (today’s Banaras). <br/>Another famous attraction is River Ganges
+                        which is <br/>the holiest river by the Hindus and many more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+       </div>
+
+       <!--javascript code-->
+    <script>
+       let aboutButtonElement = document.getElementById("aboutButton");
+let timeToVisitButtonElement = document.getElementById("timeToVisitButton");
+let attractionsButtonElement = document.getElementById("attractionsButton");
+let aboutTabElement = document.getElementById("aboutTab");
+let timeToVisitTabElement = document.getElementById("timeToVisitTab");
+let attractionsTabElement = document.getElementById("attractionsTab");
+
+timeToVisitTabElement.classList.add("d-none");
+attractionsTabElement.classList.add("d-none");
+
+function clickAboutTab() {
+    aboutTabElement.classList.remove("d-none");
+    timeToVisitTabElement.classList.add("d-none");
+    attractionsTabElement.classList.add("d-none");
+
+    aboutButtonElement.classList.add("selected-button");
+    timeToVisitButtonElement.classList.remove("selected-button");
+    attractionsButtonElement.classList.remove("selected-button");
+}
+
+function clickTimeToVisitTab() {
+    aboutTabElement.classList.add("d-none");
+    timeToVisitTabElement.classList.remove("d-none");
+    attractionsTabElement.classList.add("d-none");
+
+    aboutButtonElement.classList.remove("selected-button");
+    timeToVisitButtonElement.classList.add("selected-button");
+    attractionsButtonElement.classList.remove("selected-button");
+}
+
+function clickAttractionsTab() {
+    aboutTabElement.classList.add("d-none");
+    timeToVisitTabElement.classList.add("d-none");
+    attractionsTabElement.classList.remove("d-none");
+
+    aboutButtonElement.classList.remove("selected-button");
+    timeToVisitButtonElement.classList.remove("selected-button");
+    attractionsButtonElement.classList.add("selected-button");
+}
+
+        
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+
+</html>
